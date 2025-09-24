@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!-- Container -->
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form onsubmit="validation(event)" id="Registration">
+          <div class="userName">
+            <label for="userName">User Name </label>
+            <input type="text" id="userName" placeholder="Enter User Name">
+            <p id="nameError" class="error"></p>
+         </div>
+         <div class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email">
+             <p id="emailError" class="error"></p>
+         </div>
+         <div class="phoneNumber">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" placeholder="Enter Phone Number">
+             <p id="PhoneError" class="error"></p>
+         </div>
+         <div class="countries">
+          <label for="countries">Countries</label>
+            <select id="countries">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+         </div>
+        <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter the password">
+             <p id="PasswordError" class="error"></p>
+        </div>
+        <div class="conform_password">
+            <label for="Confirm Password">Confirm Passoword</label>
+            <input type="Password" id="Confirm-password" placeholder="Confirm the passowrd">
+             <p id="confirmPassword" class="error"></p>      
+        </div>
+
+        <!-- submit -->
+         
+        <div class="submit">
+            <button type="submit" >Submit</button>
+        </div>
+      </form>     
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
